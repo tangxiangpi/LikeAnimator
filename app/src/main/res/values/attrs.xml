@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="IconAnimatorView">
+        <attr name="ia_icon_selected" format="reference"/>
+        <attr name="ia_icon_unselected" format="reference"/>
+        <attr name="ia_cicle_color" format="color"/>
+        <attr name="ia_selected" format="boolean"/>
+    </declare-styleable>
+
+</resources>
