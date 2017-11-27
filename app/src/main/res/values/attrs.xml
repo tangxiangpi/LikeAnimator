@@ -8,4 +8,11 @@
         <attr name="ia_selected" format="boolean"/>
     </declare-styleable>
 
+    <declare-styleable name="CountAnimatorView">
+        <attr name="ca_text_color" format="reference"/>
+        <attr name="ca_count" format="integer"/>
+        <attr name="ca_textsize" format="dimension"/>
+    </declare-styleable>
+
+
 </resources>

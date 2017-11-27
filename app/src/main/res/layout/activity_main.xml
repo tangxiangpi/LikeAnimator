@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
     <com.wangsz.likeanimator.IconAnimatorView
@@ -10,14 +10,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:padding="10dp" />
+        android:padding="10dp"/>
 
     <Button
         android:id="@+id/btn_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="切换"
-        android:layout_gravity="center" />
+        android:layout_gravity="center"
+        android:text="切换"/>
 
     <com.wangsz.likeanimator.IconAnimatorView
         android:id="@+id/ica_2"
@@ -25,17 +25,41 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:padding="10dp"
-        app:ia_selected="true"
+        app:ia_cicle_color="@android:color/holo_red_light"
         app:ia_icon_selected="@mipmap/ic_trends_entrance"
         app:ia_icon_unselected="@mipmap/ic_trends_hot_unselected"
-        app:ia_cicle_color="@android:color/holo_red_light"/>
+        app:ia_selected="true" />
 
     <Button
         android:id="@+id/btn_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="切换"
-        android:layout_gravity="center" />
+        android:layout_gravity="center"
+        android:text="切换"/>
 
+
+    <com.wangsz.likeanimator.CountAnimatorView
+        android:id="@+id/cav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:ca_count="98"
+        app:ca_text_color="@android:color/holo_blue_dark"
+        app:ca_textsize="18dp"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/btn_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="+1" />
+
+    <Button
+        android:id="@+id/btn_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="-1" />
 
 </LinearLayout>

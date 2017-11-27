@@ -13,6 +13,10 @@ public class MainActivity extends AppCompatActivity {
     private Button button1;
     private Button button2;
 
+    private CountAnimatorView countAnimatorView;
+    private Button buttonUp;
+    private Button buttonDown;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,6 +39,22 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 iconAnimatorView2.setIconSelected(!iconAnimatorView2.getIconSelected(),true);
+            }
+        });
+
+        countAnimatorView = findViewById(R.id.cav);
+        buttonUp = findViewById(R.id.btn_up);
+        buttonDown = findViewById(R.id.btn_down);
+        buttonUp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                countAnimatorView.addOne();
+            }
+        });
+        buttonDown.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                countAnimatorView.minusOne();
             }
         });
 
