@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_toRightOf="@+id/icv_iav"
         android:layout_centerVertical="true"
-        app:ca_count="99"
+        app:ca_count="56"
         app:ca_text_color="@android:color/darker_gray" />
 
 </RelativeLayout>
