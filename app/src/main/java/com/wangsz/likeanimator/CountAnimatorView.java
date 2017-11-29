@@ -1,5 +1,7 @@
 package com.wangsz.likeanimator;
 
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
 import android.animation.ObjectAnimator;
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -100,6 +102,13 @@ public class CountAnimatorView extends View {
             mCount += change;
             ObjectAnimator animator = ObjectAnimator.ofFloat(this, "textOffY", 1, 0);
             animator.setDuration(300);
+            animator.addListener(new AnimatorListenerAdapter() {
+                @Override
+                public void onAnimationEnd(Animator animation) {
+                    super.onAnimationEnd(animation);
+                    requestLayout();
+                }
+            });
             animator.start();
         }
     }
@@ -151,17 +160,26 @@ public class CountAnimatorView extends View {
         return (int) (dipValue * scale + 0.5f);
     }
 
+    public void setCount(int count) {
+        mCount = count;
+        invalidate();
+    }
+
+    public int getCount() {
+        return mCount;
+    }
+
     /**
      * 加1
      */
-    public void addOne(){
+    public void addOne() {
         analyseCount(1);
     }
 
     /**
      * 减1
      */
-    public void minusOne(){
+    public void minusOne() {
         analyseCount(-1);
     }
 

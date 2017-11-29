@@ -62,4 +62,16 @@
         android:layout_gravity="center"
         android:text="-1" />
 
+    <com.wangsz.likeanimator.IconCountView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:padding="10dp"
+        android:layout_height="wrap_content"/>
+
+    <com.wangsz.likeanimator.IconCountView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        app:ic_view_id="@layout/my_icon_count_view"
+        android:layout_height="wrap_content"/>
+
 </LinearLayout>

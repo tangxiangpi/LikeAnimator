@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.wangsz.likeanimator.IconAnimatorView
+        android:id="@+id/icv_iav"
+        android:layout_width="wrap_content"
+        app:ia_selected="false"
+        android:layout_height="wrap_content" />
+
+    <com.wangsz.likeanimator.CountAnimatorView
+        android:id="@+id/icv_cav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/icv_iav"
+        android:layout_centerVertical="true"
+        app:ca_count="99"
+        app:ca_text_color="@android:color/darker_gray" />
+
+</RelativeLayout>

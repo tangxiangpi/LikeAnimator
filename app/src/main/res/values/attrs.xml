@@ -14,5 +14,8 @@
         <attr name="ca_textsize" format="dimension"/>
     </declare-styleable>
 
+    <declare-styleable name="IconCountView">
+        <attr name="ic_view_id" format="reference"/>
+    </declare-styleable>
 
 </resources>
